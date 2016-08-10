@@ -1,0 +1,32 @@
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+}
+h1 {
+  color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+h2 {
+  color: #000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+}
+h2.slide-title {
+  color: #fff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+}
