@@ -6,6 +6,7 @@
   <title>Техномарт - главная</title>
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +18,9 @@
           <div class="logo header"><a href="#">Техномарт</a></div>
         </div>
         <div class="goods-search">
-          <a href="#"><i class="icon-search"></i>Поиск</a>
+          <label>
+            <input type="text" name="search" placeholder="Поиск">
+          </label>
         </div>
         <ul class="goods-order">
           <li>
@@ -107,7 +110,7 @@
               <input type="checkbox" name="Интерскол" id="Interscol">
               <label for="Interscol">ИНТЕРСКОЛ
               </label>
-              <input type="checkbox" name="MAKITA" id="Makita" checked>
+              <input type="checkbox" name="MAKITA" id="MAKITA" checked>
               <label for="MAKITA">MAKITA
               </label>
               <input type="checkbox" name="DEWALT" id="DEWALT">
@@ -125,11 +128,11 @@
               <label for="power-supply1">Аккумуляторные
               </label>
               <input type="radio" name="power-supply" id="power-supply2" value="Сетевые">
-              <label fo id="power-supply2">Сетевые
+              <label for="power-supply2">Сетевые
               </label>
+            </fieldset>
           </div>
           <button type="submit">Показать</button>
-          </fieldset>
         </form>
       </div>
       <div class="catalogue-content-right">
@@ -145,176 +148,186 @@
         </div>
         <div class="catalogue-list">
           <div class="catalogue-container">
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span></a>
+              </p>
+              <span class="discount">22500 P.</span>
+              <span class="price">15500 P.</span>
             </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span></a>
+              </p>
+              <span class="discount">30500 P.</span>
+              <span class="price">25500 P.</span>
             </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 3000</span></a>
-            </p>
-            <span class="discount">22500 P.</span>
-            <span class="price">15500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
+            <div class="catalogue-item-image goods-actions">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор</span>
+                  <span>BOSCH BFG 2000</span></a>
+              </p>
+              <span class="discount"></span>
+              <span class="price">12500 P.</span>
             </div>
-            <div class="image">
-              <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span></a>
+              </p>
+              <span class="discount">22500 P.</span>
+              <span class="price">15500 P.</span>
             </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 6000</span></a>
-            </p>
-            <span class="discount">30500 P.</span>
-            <span class="price">25500 P.</span>
-          </div>
-          <div class="catalogue-item-image goods-actions">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 6000</span></a>
+              </p>
+              <span class="discount">30500 P.</span>
+              <span class="price">25500 P.</span>
             </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 2000</span></a>
+              </p>
+              <span class="discount"></span>
+              <span class="price">12500 P.</span>
             </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор</span>
-                <span>BOSCH BFG 2000</span></a>
-            </p>
-            <span class="discount"></span>
-            <span class="price">12500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 3000</span></a>
+              </p>
+              <span class="discount">22500 P.</span>
+              <span class="price">15500 P.</span>
             </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span> BFG 6000</span></a>
+              </p>
+              <span class="discount">30500 P.</span>
+              <span class="price">25500 P.</span>
             </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 3000</span></a>
-            </p>
-            <span class="discount">22500 P.</span>
-            <span class="price">15500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
+            <div class="catalogue-item-image">
+              <div class="flag flag-new">new</div>
+              <div class="actions">
+                <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
+                <a class="bookmark" href="#">В закладки</a>
+              </div>
+              <div class="image">
+                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+              </div>
+              <p>
+                <a class="item-title" href="#">
+                  <span>Перфоратор BOSCH</span>
+                  <span>BFG 2000</span></a>
+              </p>
+              <span class="discount"></span>
+              <span class="price">12500 P.</span>
             </div>
-            <div class="image">
-              <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
-            </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 6000</span></a>
-            </p>
-            <span class="discount">30500 P.</span>
-            <span class="price">25500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
-            </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
-            </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 2000</span></a>
-            </p>
-            <span class="discount"></span>
-            <span class="price">12500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
-            </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
-            </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 3000</span></a>
-            </p>
-            <span class="discount">22500 P.</span>
-            <span class="price">15500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
-            </div>
-            <div class="image">
-              <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
-            </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span> BFG 6000</span></a>
-            </p>
-            <span class="discount">30500 P.</span>
-            <span class="price">25500 P.</span>
-          </div>
-          <div class="catalogue-item-image">
-            <div class="flag flag-new">new</div>
-            <div class="actions">
-              <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
-              <a class="bookmark" href="#">В закладки</a>
-            </div>
-            <div class="image">
-              <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
-            </div>
-            <p>
-              <a class="item-title" href="#">
-                <span>Перфоратор BOSCH</span>
-                <span>BFG 2000</span></a>
-            </p>
-            <span class="discount"></span>
-            <span class="price">12500 P.</span>
           </div>
         </div>
-      </div>
-        <div class="paginator">
-          <a href="current">1</a>
-          <a class="#2">2</a>
-          <a href="#3">3</a>
-          <a href="next">Следующая</a>
-        </div>
+        <ul class="paginator">
+          <li>
+            <a class="page current">1</a>
+          </li>
+          <li>
+            <a class="page" href="#2">2</a>
+          </li>
+          <li>
+            <a class="page" href="#3">3</a>
+          </li>
+          <li>
+            <a class="next" href="#">Следующая</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="goods-description">
+  </div>
+  <div class="goods-description">
+    <div class="container">
       <h2 class="catalogue-info">Пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
         и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </div>
   </div>
-  <footer class="main-footer">
+  <footer class="main-footer catalogue-footer">
     <div class="footer-top">
       <div class="container clearfix">
         <div class="footer-contacts">
