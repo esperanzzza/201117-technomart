@@ -11,13 +11,13 @@
 
 <body>
   <header class="main-header">
-      <div class="header-top">
-        <div class="container clearfix">
-          <div class="logo-wrapper">
-        <div class="logo header"><a href="#">Техномарт</a></div>
-      </div>
+    <div class="header-top">
+      <div class="container clearfix">
+        <div class="logo-wrapper">
+          <div class="logo header"><a href="#">Техномарт</a></div>
+        </div>
         <div class="goods-search">
-            <a href="#"><i class="icon-search"></i>Поиск:</a>
+          <a href="#"><i class="icon-search"></i>Поиск</a>
         </div>
         <ul class="goods-order">
           <li>
@@ -31,9 +31,9 @@
           </li>
         </ul>
       </div>
-      </div>
-      <div class="header-middle">
-        <div class="container clearfix">
+    </div>
+    <div class="header-middle">
+      <div class="container clearfix">
         <div class="shop-presentation">
           <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </div>
@@ -47,9 +47,9 @@
             <a class="logout" href="#"><i class="icon-logout"></i></a>
           </div>
           <div class="user-data">
-          <a class="orders" href="#">Мои заказы</a>
-          <a class="user-page" href="#">Личный кабинет</a>
-        </div>
+            <a class="orders" href="#">Мои заказы</a>
+            <a class="user-page" href="#">Личный кабинет</a>
+          </div>
         </div>
       </div>
       <nav class="main-navigation container">
@@ -65,7 +65,7 @@
       </nav>
     </div>
   </header>
-  <div class="container clearfix">
+  <div class="container">
     <ul class="breadcrumbs">
       <li>
         <a href="index.html"><i class="icon-home"></i></a>
@@ -81,12 +81,12 @@
       </li>
     </ul>
     <h2 class="catalogue-title">Перфораторы</h2>
-    <div class="catalogue-wrapper">
+    <div class="catalogue-container clearfix">
       <div class="catalogue-content-left">
         <form class="catalogue-filter" action="/echo" method="post">
-          <span class="title">Фильтр</span>
-          <b class="filter-title">Цена:</b>
-          <div class="range-filter">
+          <span class="range-category">Фильтр:</span>
+          <span class="price-category">Цена:</span>
+          <div class="price-filter">
             <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
@@ -95,49 +95,48 @@
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              <input class="min-price" type="text" value="0">
+              <input class="min-price" type="text" value="0"> -
               <input class="max-price" type="text" value="30000">
             </div>
           </div>
           <div class="producers">
             <fieldset>
-              <legend class="filter-title">Производители:</legend>
-                <label>
-              <input type="checkbox" name="BOSCH" checked><i class="icon-check-on"></i>BOSCH
-            </label>
-            <label>
-              <input type="checkbox" name="Интерскол"><i class="icon-check-off"></i>ИНТЕРСКОЛ
-            </label>
-            <label>
-              <input type="checkbox" name="MAKITA" checked><i class="icon-check-on"></i>MAKITA
-            </label>
-            <label>
-              <input type="checkbox" name="DEWALT"><i class="icon-check-off"></i>DEWALT
-            </label>
-            <label>
-              <input type="checkbox" name="HITACHI"><i class="icon-check-off"></i>HITACHI
-            </label>
-              </fieldset>
+              <legend>Производители:</legend>
+              <input type="checkbox" name="BOSCH" id="BOSCH" checked>
+              <label for="BOSCH">BOSCH</label>
+              <input type="checkbox" name="Интерскол" id="Interscol">
+              <label for="Interscol">ИНТЕРСКОЛ
+              </label>
+              <input type="checkbox" name="MAKITA" id="Makita" checked>
+              <label for="MAKITA">MAKITA
+              </label>
+              <input type="checkbox" name="DEWALT" id="DEWALT">
+              <label for="DEWALT">DEWALT
+              </label>
+              <input type="checkbox" name="HITACHI" id="HITACHI">
+              <label for="HITACHI">HITACHI
+              </label>
+            </fieldset>
           </div>
           <div class="power-supply">
             <fieldset>
-              <legend class="filter-title">Питание:</legend>
-            <label>
-              <input type="radio" name="power-supply" value="Аккумуляторные" checked><i class="icon-circle-dot"></i>Аккумуляторные
-            </label>
-            <label>
-              <input type="radio" name="power-supply" value="Сетевые"><i class="icon-circle"></i>Сетевые
-            </label>
+              <legend>Питание:</legend>
+              <input type="radio" name="power-supply" id="power-supply1" value="Аккумуляторные" checked>
+              <label for="power-supply1">Аккумуляторные
+              </label>
+              <input type="radio" name="power-supply" id="power-supply2" value="Сетевые">
+              <label fo id="power-supply2">Сетевые
+              </label>
           </div>
           <button type="submit">Показать</button>
-            </fieldset>
+          </fieldset>
         </form>
       </div>
       <div class="catalogue-content-right">
-        <div class="sorting">
-          <span class="title">Сортировка:</span>
-          <ul>
-            <li class="active"><a href="#">По цене</a></li>
+        <div class="sorting range-category clearfix">
+          <span class="sorting-title">Сортировка:</span>
+          <ul class="sorting-category">
+            <li><a class="active" href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
             <li><a href="#"><i class="icon-up-dir"></i></a></li>
@@ -145,7 +144,8 @@
           </ul>
         </div>
         <div class="catalogue-list">
-          <article class="catalogue-item-image">
+          <div class="catalogue-container">
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -161,8 +161,8 @@
             </p>
             <span class="discount">22500 P.</span>
             <span class="price">15500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -178,8 +178,8 @@
             </p>
             <span class="discount">30500 P.</span>
             <span class="price">25500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image goods-actions">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -195,8 +195,8 @@
             </p>
             <span class="discount"></span>
             <span class="price">12500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -212,8 +212,8 @@
             </p>
             <span class="discount">22500 P.</span>
             <span class="price">15500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -229,8 +229,8 @@
             </p>
             <span class="discount">30500 P.</span>
             <span class="price">25500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -246,8 +246,8 @@
             </p>
             <span class="discount"></span>
             <span class="price">12500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -263,8 +263,8 @@
             </p>
             <span class="discount">22500 P.</span>
             <span class="price">15500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -280,8 +280,8 @@
             </p>
             <span class="discount">30500 P.</span>
             <span class="price">25500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image">
             <div class="flag flag-new">new</div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -297,8 +297,9 @@
             </p>
             <span class="discount"></span>
             <span class="price">12500 P.</span>
-          </article>
+          </div>
         </div>
+      </div>
         <div class="paginator">
           <a href="current">1</a>
           <a class="#2">2</a>
@@ -308,7 +309,7 @@
       </div>
     </div>
     <div class="goods-description">
-      <h1>Пара слов о перфораторах</h1>
+      <h2 class="catalogue-info">Пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
         и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </div>
@@ -316,34 +317,34 @@
   <footer class="main-footer">
     <div class="footer-top">
       <div class="container clearfix">
-  <div class="footer-contacts">
-        <div class="logo footer"><a href="#">Техномарт</a></div>
-             <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <div class="footer-contacts">
+          <div class="logo footer"><a href="#">Техномарт</a></div>
+          <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br> +7 (812) 555-05-05</p>
-          </div>
-          <div class="footer-navigation">
-        <nav class="site-navigation">
-          <ul>
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <nav class="goods-navigation">
-          <ul>
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-          </ul>
-        </nav>
+        </div>
+        <div class="footer-navigation">
+          <nav class="site-navigation">
+            <ul>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <nav class="goods-navigation">
+            <ul>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container clearfix">
+    <div class="footer-bottom">
+      <div class="container clearfix">
         <div class="footer-copyright">
           <p>© 2010-2016 Компания "Техномарт"
             <br> Все права защищены</p>
@@ -356,12 +357,12 @@
         <div class="footer-feedback">
           <p>
             <span>Обратная связь</span>
-          <a href="#">mail@htmlacademy.ru</a></p>
+            <a href="#">mail@htmlacademy.ru</a></p>
         </div>
         <div class="footer-developers">
           <p>
             <span>Разработано - </span>
-          <a href="#">htmlacademy.ru</a></p>
+            <a href="#">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
