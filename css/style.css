@@ -669,7 +669,8 @@ article.catalogue-item-image {
   width: 220px;
   height: 339px;
   margin-right: 17px;
-  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 20px;
+  font-family: 'PT Sans', sans-serif, 'Arial';
   font-weight: 700;
   border: 1px solid #e5e5e5;
 }
@@ -1057,7 +1058,7 @@ article.catalogue-item-image {
   background: #f7f3ec;
   font-size: 17px;
   line-height: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif, 'Arial';
   font-weight: 400;
   text-align: center;
   color: #283136;
@@ -1200,7 +1201,7 @@ div.catalogue-item-image {
   height: 100%;
   margin-right: 17px;
   margin-bottom: 20px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif, 'Arial';
   font-weight: 700;
   border: 1px solid #e5e5e5;
 }
