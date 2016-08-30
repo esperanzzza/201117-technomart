@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
   <title>Техномарт - главная</title>
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
@@ -15,7 +16,7 @@
     <div class="header-top">
       <div class="container clearfix">
         <div class="logo-wrapper">
-          <div class="logo header"><a href="index.html">Техномарт</a></div>
+          <a class="logo header" href="index.html">Техномарт</a>
         </div>
         <div class="goods-search">
           <label>
@@ -49,17 +50,19 @@
             <a class="username" href="#"><i class="icon-user"></i>Равшан Джамшутович</a>
             <a class="logout" href="#"><i class="icon-logout"></i></a>
           </div>
-          <div class="user-data">
-            <a class="orders" href="#">Мои заказы</a>
-            <a class="user-page" href="#">Личный кабинет</a>
-          </div>
+          <ul class="user-data">
+            <li>
+              <a class="orders" href="#">Мои заказы</a></li>
+            <li><i></i></li>
+            <li><a class="user-page" href="#">Личный кабинет</a></li>
+          </ul>
         </div>
       </div>
       <nav class="main-navigation container">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -71,13 +74,13 @@
   <div class="container">
     <ul class="breadcrumbs">
       <li>
-        <a href="index.html"><i class="icon-home"></i></a>
+        <a href="index.html"><i class="icon-home"></i><i class="icon-right"></i></a>
       </li>
       <li>
-        <a href="#">Каталог</a>
+        <a href="#">Каталог<i class="icon-right"></i></a>
       </li>
       <li>
-        <a href="#">Инструмент</a>
+        <a href="#">Инструмент<i class="icon-right"></i></a>
       </li>
       <li>
         <a>Перфораторы</a>
@@ -86,19 +89,19 @@
     <h2 class="catalogue-title">Перфораторы</h2>
     <div class="catalogue-container clearfix">
       <div class="catalogue-content-left">
-        <form class="catalogue-filter" action="/echo" method="post">
+        <form class="catalogue-filter" action="/echo" method="get">
           <span class="range-category">Фильтр:</span>
           <span class="price-category">Цена:</span>
           <div class="price-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar"></div>
+                <div style="width:80%;" class="bar"></div>
               </div>
               <div class="toggle min-toggle"></div>
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              <input class="min-price" type="text" value="0"> -
+              <input class="min-price" type="text" value="0"><i></i>
               <input class="max-price" type="text" value="30000">
             </div>
           </div>
@@ -139,17 +142,17 @@
         <div class="sorting range-category clearfix">
           <span class="sorting-title">Сортировка:</span>
           <ul class="sorting-category">
-            <li><a class="active" href="#">По цене</a></li>
+            <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
-            <li><a href="#"><i class="icon-up-dir"></i></a></li>
-            <li><a href="#"><i class="icon-down-dir"></i></a></li>
+            <li><a class="sorting-controls active" href="#"><i class="icon-up-dir"></i></a></li>
+            <li><a class="sorting-controls" href="#"><i class="icon-down-dir"></i></a></li>
           </ul>
         </div>
         <div class="catalogue-list">
           <div class="catalogue-container">
             <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -166,7 +169,7 @@
               <span class="price">15500 P.</span>
             </div>
             <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -183,7 +186,7 @@
               <span class="price">25500 P.</span>
             </div>
             <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new"></div>
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -217,7 +220,7 @@
               <span class="price">15500 P.</span>
             </div>
             <div class="catalogue-item-image">
-              <div class="flag flag-new"></div>
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -234,7 +237,7 @@
               <span class="price">25500 P.</span>
             </div>
             <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -251,7 +254,7 @@
               <span class="price">12500 P.</span>
             </div>
             <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -268,7 +271,7 @@
               <span class="price">15500 P.</span>
             </div>
             <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -285,7 +288,7 @@
               <span class="price">25500 P.</span>
             </div>
             <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new">new</div>
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -331,7 +334,7 @@
     <div class="footer-top">
       <div class="container clearfix">
         <div class="footer-contacts">
-          <div class="logo footer"><a href="index.html">Техномарт</a></div>
+          <a class="logo footer" href="index.html">Техномарт</a>
           <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br> +7 (812) 555-05-05</p>
         </div>
@@ -363,9 +366,9 @@
             <br> Все права защищены</p>
         </div>
         <div class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><i class="icon-vk"></i>Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i>Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i>Инстаграмм</a>
+          <a href="#" class="social-btn"><i class="icon-vk"></i><b>Вконтакте</b></a>
+          <a href="#" class="social-btn"><i class="icon-facebook"></i><b>Фейсбук</b></a>
+          <a href="#" class="social-btn"><i class="icon-instagramm"></i><b>Инстаграмм</b></a>
         </div>
         <div class="footer-feedback">
           <p>

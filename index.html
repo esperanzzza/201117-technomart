@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
   <title>Техномарт - главная</title>
   <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -15,7 +16,7 @@
     <div class="header-top">
       <div class="container clearfix">
         <div class="logo-wrapper">
-          <div class="logo header"><a>Техномарт</a></div>
+          <a class="logo header">Техномарт</a>
         </div>
         <div class="goods-search">
           <label>
@@ -66,51 +67,54 @@
     <div class="container">
       <section class="goods-promo">
         <article class="materials">
-          <div class="flag flag-new">new</div>
+          <div class="flag flag-new new-item"></div>
           <div class="title">Материалы</div>
           <a class="btn promo" href="#">На любой вкус</a>
+          <div class="bucket-img"></div>
         </article>
         <article class="tools">
-          <div class="flag flag-new">new</div>
+          <div class="flag flag-new"></div>
           <div class="title">Инструмент</div>
           <a class="btn promo" href="#">На все случаи</a>
+          <div class="drill-img"></div>
         </article>
         <article class="machinery">
-          <div class="flag flag-new">new</div>
+          <div class="flag flag-new"></div>
           <div class="title">Техника</div>
           <a class="btn promo" href="#">Для стройки</a>
+          <div class="tractor-img"></div>
         </article>
-        <div class="slider slider-one">
-          <div class="slide-content">
-            <h2 class="slide-title">Перфораторы</h2>
-            <span class="slide-promo">Настоящие мужские игрушки</span>
-            <a class="btn" href="#">Открыть каталог</a>
-          </div>
-        </div>
-        <div class="slider-controls">
-          <button class="left" type="button"><i class="icon-left"></i></button>
-          <button class="right" type="button"><i class="icon-right"></i></button>
-        </div>
-        <div class="slider slider-two">
+        <div class="sliders">
           <div class="slider-controls">
-            <button class="left" type="button"><i class="icon-left"></i></button>
-            <button class="right" type="button"><i class="icon-right"></i></button>
+            <i class="active"></i>
+            <i></i>
           </div>
-          <div class="slide-content">
-            <h2 class="slide-title">Дрели</h2>
-            <span class="slide-promo">Соседям на радость!</span>
-            <a class="btn" href="#">Открыть каталог</a>
+          <div class="slider slider-one">
+            <div class="slide-content">
+              <h2 class="slide-title">Перфораторы</h2>
+              <span class="slide-promo">Настоящие мужские игрушки</span>
+              <a class="btn" href="#">Открыть каталог</a>
+            </div>
+          </div>
+          <div class="slider slider-two">
+            <div class="slide-content">
+              <h2 class="slide-title">Дрели</h2>
+              <span class="slide-promo">Соседям на радость!</span>
+              <a class="btn" href="#">Открыть каталог</a>
+            </div>
           </div>
         </div>
         <article class="discounts">
           <div class="flag flag-new"></div>
           <div class="title">Скидки 50%</div>
           <a class="btn promo" href="#">На 350 товаров</a>
+          <div class="cart-img"></div>
         </article>
         <article class="delivery">
           <div class="flag flag-new"></div>
           <div class="title">Доставка</div>
           <a class="btn promo" href="#">Бесплатно</a>
+          <div class="delivery-img"></div>
         </article>
       </section>
       <section class="popular-goods">
@@ -171,7 +175,7 @@
             <span class="price">25500 P.</span>
           </article>
           <article class="catalogue-item-image no-discount">
-            <div class="flag flag-new"></div>
+            <div class="flag flag-new new-item"></div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
               <a class="bookmark" href="#">В закладки</a>
@@ -230,7 +234,7 @@
           <div class="tabs-wrapper clearfix">
             <div class="left-tabs-column">
               <ul class="tab-links">
-                <li><a class="active" href="#tab1">Доставка</a></li>
+                <li><a href="#tab1">Доставка</a></li>
                 <li><a href="#tab2">Гарантия</a></li>
                 <li><a href="#tab3">Кредит</a></li>
               </ul>
@@ -240,7 +244,7 @@
                 <div class="tab-one">
                   <div class="tab-description">
                     <span class="tab-title">Доставка</span>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<b>Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</b>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<b>Ведь мы неплохо зарабатаем, поднимая его на ваш этаж!</b>
                   </div>
                 </div>
                 <div class="tab-two">
@@ -293,7 +297,7 @@
     <div class="footer-top">
       <div class="container clearfix">
         <div class="footer-contacts">
-          <div class="logo footer"><a>Техномарт</a></div>
+          <a class="logo footer">Техномарт</a>
           <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br> +7 (812) 555-05-05</p>
         </div>
@@ -325,9 +329,9 @@
             <br> Все права защищены</p>
         </div>
         <div class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><i class="icon-vk"></i>Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i>Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i>Инстаграмм</a>
+          <a href="#" class="social-btn"><i class="icon-vk"></i><b>Вконтакте</b></a>
+          <a href="#" class="social-btn"><i class="icon-facebook"></i><b>Фейсбук</b></a>
+          <a href="#" class="social-btn"><i class="icon-instagramm"></i><b>Инстаграмм</b></a>
         </div>
         <div class="footer-feedback">
           <p>

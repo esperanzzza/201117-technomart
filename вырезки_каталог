@@ -29,3 +29,39 @@
         text-transform: none;
         color: #000;
   }
+  .tab-one::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/sprite.png");
+    background-position: -20px -0px;
+    width: 446px;
+    height: 261px;
+    transform: translate(172px, -150px);
+    z-index: 0;
+  }
+
+ .machinery {
+    background: #cc79d1 url("../img/tractor-img.png") no-repeat;
+    background-position: 191px 31px;}
+
+
+    <button class="left" type="button"><i class="icon-left"></i></button>
+    <button class="right" type="button"><i class="icon-right"></i></button>
+
+
+    -webkit-transform: translate(-6px, 290px);
+              transform: translate(-6px, 290px);
+
+              }
+              .slide-content .btn {
+                position: absolute;
+                padding-left: 49px;
+                padding-right: 45px;
+                min-width: 101px;
+                -webkit-transform: translate(-230px, 128px);
+                        transform: translate(-230px, 128px);
+              }
+              .basket:focus {
+              background: #161d29;
+              color: #8b8e94;
+            }
