@@ -65,3 +65,33 @@
               background: #161d29;
               color: #8b8e94;
             }
+
+            padding-top: 14px;
+            padding-left: 48px;
+            padding-bottom: 14px;
+
+
+            article.inner-page {
+              position: relative;
+              display: inline-block;
+              vertical-align: middle;
+              width: 220px;
+              height: 100%;
+              margin-right: 17px;
+              margin-bottom: 20px;
+              font-family: 'PT Sans', sans-serif, 'Arial';
+              font-weight: 700;
+              border: 1px solid #e5e5e5;
+            }
+
+
+            .goods-search::before {
+                content: "🔍";
+                position: absolute;
+                top: 15px;
+                left: 20px;
+                color: #6a7180;
+            }
+            .goods-search:hover::before {
+              color: #fff;
+            }

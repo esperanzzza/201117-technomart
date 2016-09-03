@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <title>Техномарт - главная</title>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,17 +18,16 @@
         <div class="logo-wrapper">
           <a class="logo header">Техномарт</a>
         </div>
-        <div class="goods-search">
-          <label>
-            <input type="text" name="search" placeholder="Поиск">
-          </label>
-        </div>
+        <label class="goods-search">
+          <input class="search-form" type="search" name="search" placeholder="Поиск">
+          <i class="icon-search"></i>
+        </label>
         <ul class="goods-order">
           <li>
             <a class="bookmark" href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
           </li>
           <li>
-            <a class="basket" href="#"><i class="icon-basket"></i>Корзина: 0</a>
+            <a class="basket basket-empty" href="#"><i class="icon-basket"></i>Корзина: 0</a>
           </li>
           <li>
             <a class="make-order" href="#">Оформить заказ</a>
@@ -93,14 +92,14 @@
             <div class="slide-content">
               <h2 class="slide-title">Перфораторы</h2>
               <span class="slide-promo">Настоящие мужские игрушки</span>
-              <a class="btn" href="#">Открыть каталог</a>
+              <a class="btn" href="catalogue.html">Открыть каталог</a>
             </div>
           </div>
           <div class="slider slider-two">
             <div class="slide-content">
               <h2 class="slide-title">Дрели</h2>
               <span class="slide-promo">Соседям на радость!</span>
-              <a class="btn" href="#">Открыть каталог</a>
+              <a class="btn" href="catalogue.html">Открыть каталог</a>
             </div>
           </div>
         </div>
@@ -123,7 +122,7 @@
           <a class="btn popular-link" href="#">Все популярные товары</a>
         </div>
         <div class="catalogue-wrapper">
-          <article class="catalogue-item-image">
+          <div class="catalogue-item-image main-page">
             <div class="flag flag-new"></div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -139,8 +138,8 @@
             </p>
             <span class="discount">33500 P.</span>
             <span class="price">25500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image main-page">
             <div class="flag flag-new"></div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -156,8 +155,8 @@
             </p>
             <span class="discount">22500 P.</span>
             <span class="price">15500 P.</span>
-          </article>
-          <article class="catalogue-item-image">
+          </div>
+          <div class="catalogue-item-image main-page">
             <div class="flag flag-new"></div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -173,8 +172,8 @@
             </p>
             <span class="discount">30500 P.</span>
             <span class="price">25500 P.</span>
-          </article>
-          <article class="catalogue-item-image no-discount">
+          </div>
+          <div class="catalogue-item-image main-page no-discount">
             <div class="flag flag-new new-item"></div>
             <div class="actions">
               <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -190,7 +189,7 @@
             </p>
             <span class="discount"></span>
             <span class="price">12500 P.</span>
-          </article>
+          </div>
         </div>
       </section>
       <section class="popular-producers">
@@ -198,32 +197,32 @@
           <h2 class="popular-category">Популярные производители:</h2>
           <a class="btn popular-link" href="#">Все популярные производители</a>
         </div>
-        <div class="producers-list">
-          <div class="company-card">
+        <ul class="producers-list">
+          <li class="company-card">
             <a href="#"><img width="126" height="37" src="img/bosch-logo.jpg" alt="BOSCH"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="123" height="40" src="img/makita-logo.jpg" alt="Makita"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="146" height="44" src="img/DeWALT-logo.jpg" alt="DeWalt"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="184" height="32" src="img/interscol-logo.jpg" alt="Интерскол"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="169" height="31" src="img/hitachi-logo.jpg" alt="HITACHI"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="121" height="73" src="img/lg-logo.jpg" alt="LG"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="151" height="96" src="img/AEG-logo.jpg" alt="AEG Power Solutions"></a>
-          </div>
-          <div class="company-card">
+          </li>
+          <li class="company-card">
             <a href="#"><img width="204" height="69" src="img/metabo-logo.jpg" alt="METABO"></a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </div>
     <section class="services-promo">
@@ -286,9 +285,9 @@
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           </div>
           <div class="address-map">
-            <a href="#"><img width="300" height="158" src="img/address-map.jpg" alt="Location on a map"></a>
+            <a href="#"><img class="open-map"width="300" height="158" src="img/address-map.jpg" alt="Location on a map"></a>
           </div>
-          <a class="btn" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn-contact-us" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -346,9 +345,47 @@
       </div>
     </div>
   </footer>
-
-
-
+  <div class="modal-content-contact">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <form class="write-us" action="/echo" method="post">
+      <div class="modal-form-wrapper clearfix">
+        <div class="left-form-column">
+          <label for="name"><b>Введите ваше имя</b></label>
+          <input class="name" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="right-form-column">
+          <label for="email"><b>Ваш e-mail</b></label>
+          <input class="email" type="email" id="email" name="email" placeholder="Для отправки ответа">
+        </div>
+        <label for="text"><b>Текст письма</b></label>
+        <textarea id="text" name="text" rows="4" placeholder="В свободной форме"></textarea>
+      </div>
+      <div class="modal-content-button">
+        <div class="modal-form-wrapper">
+          <button class="btn" type="submit">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-content-order">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal-form-wrapper">
+      <i class="icon-add"></i>
+      <h2>Товар добавлен в корзину!</h2>
+    </div>
+    <div class="add-basket-actions">
+      <div class="modal-form-wrapper">
+        <a class="btn modal-make-order" href="#">Оформить заказ</a>
+        <a class="btn purchase" href="#">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-content-map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177205!2d30.320889251118004!3d59.93879686895961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1472825184792" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+  </div>
+  <div class="modal-overlay" hidden></div>
+  <script src="js/popup-modal-content-basket.js"></script>
 </body>
 
 </html>

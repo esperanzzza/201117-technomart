@@ -18,17 +18,16 @@
         <div class="logo-wrapper">
           <a class="logo header" href="index.html">Техномарт</a>
         </div>
-        <div class="goods-search">
-          <label>
-            <input type="text" name="search" placeholder="Поиск">
-          </label>
-        </div>
+        <label class="goods-search">
+          <input class="search-form" type="search" name="search" placeholder="Поиск">
+          <i class="icon-search"></i>
+        </label>
         <ul class="goods-order">
           <li>
             <a class="bookmark" href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
           </li>
           <li>
-            <a class="basket" href="#"><i class="icon-basket"></i>Корзина: 0</a>
+            <a class="basket basket-full" href="#"><i class="icon-basket"></i>Корзина: 10</a>
           </li>
           <li>
             <a class="make-order" href="#">Оформить заказ</a>
@@ -74,13 +73,13 @@
   <div class="container">
     <ul class="breadcrumbs">
       <li>
-        <a href="index.html"><i class="icon-home"></i><i class="icon-right"></i></a>
+        <a href="index.html"><i class="icon-home"></i></a>
       </li>
       <li>
-        <a href="#">Каталог<i class="icon-right"></i></a>
+        <a href="#">Каталог</a>
       </li>
       <li>
-        <a href="#">Инструмент<i class="icon-right"></i></a>
+        <a href="#">Инструмент</a>
       </li>
       <li>
         <a>Перфораторы</a>
@@ -89,7 +88,7 @@
     <h2 class="catalogue-title">Перфораторы</h2>
     <div class="catalogue-container clearfix">
       <div class="catalogue-content-left">
-        <form class="catalogue-filter" action="/echo" method="get">
+        <form class="catalogue-filter" action="/echo" method="post">
           <span class="range-category">Фильтр:</span>
           <span class="price-category">Цена:</span>
           <div class="price-filter">
@@ -135,7 +134,7 @@
               </label>
             </fieldset>
           </div>
-          <button type="submit">Показать</button>
+          <button class="supply-btn" type="submit">Показать</button>
         </form>
       </div>
       <div class="catalogue-content-right">
@@ -150,8 +149,8 @@
           </ul>
         </div>
         <div class="catalogue-list">
-          <div class="catalogue-container">
-            <div class="catalogue-item-image">
+          <div class="catalogue-wrapper">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -168,7 +167,7 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -185,7 +184,7 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
+            <div class="catalogue-item-image inner-page no-discount">
               <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -202,7 +201,7 @@
               <span class="discount">12500 Р.</span>
               <span class="price">12500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -219,7 +218,7 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -236,7 +235,7 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
+            <div class="catalogue-item-image inner-page no-discount">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -253,7 +252,7 @@
               <span class="discount">12500 Р.</span>
               <span class="price">12500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -270,7 +269,7 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -287,7 +286,7 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
+            <div class="catalogue-item-image inner-page no-discount">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -383,9 +382,21 @@
       </div>
     </div>
   </footer>
-
-
-
+  <div class="modal-content-order">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal-form-wrapper">
+      <i class="icon-add"></i>
+      <h2>Товар добавлен в корзину!</h2>
+    </div>
+    <div class="add-basket-actions">
+      <div class="modal-form-wrapper">
+        <a class="btn modal-make-order" href="#">Оформить заказ</a>
+        <a class="btn purchase" href="#">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" hidden></div>
+<script src="js/popup-map.js"></script>
 </body>
 
 </html>
