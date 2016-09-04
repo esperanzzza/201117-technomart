@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <title>Техномарт - главная</title>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimized-style.css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
         </div>
         <div class="header-contacts">
           <span class="phone"><i class="icon-phone"></i>+7 (812) 555-05-05</span>
-          <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
           <div class="authorized-user">
@@ -148,7 +148,7 @@
             <li><a class="sorting-controls" href="#"><i class="icon-down-dir"></i></a></li>
           </ul>
         </div>
-        <div class="catalogue-list">
+        <div class="catalogue-range">
           <div class="catalogue-wrapper">
             <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
@@ -334,7 +334,7 @@
       <div class="container clearfix">
         <div class="footer-contacts">
           <a class="logo footer" href="index.html">Техномарт</a>
-          <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br> +7 (812) 555-05-05</p>
         </div>
         <div class="footer-navigation">
@@ -382,7 +382,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal-content-order">
+  <div class="modal-content-order" hidden>
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <div class="modal-form-wrapper">
       <i class="icon-add"></i>
@@ -396,7 +396,9 @@
     </div>
   </div>
   <div class="modal-overlay" hidden></div>
-<script src="js/popup-map.js"></script>
+<script src="js/polifylls.js"></script>
+<script src="js/showhide-elements-component.js"></script>
+<script src="js/showhide-elements-for-catalogue.js"></script>
 </body>
 
 </html>
