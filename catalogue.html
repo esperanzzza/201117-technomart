@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
   <title>Техномарт - главная</title>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimized-style.css">
 </head>
 
 <body>
@@ -15,19 +16,18 @@
     <div class="header-top">
       <div class="container clearfix">
         <div class="logo-wrapper">
-          <div class="logo header"><a href="index.html">Техномарт</a></div>
+          <a class="logo header" href="index.html">Техномарт</a>
         </div>
-        <div class="goods-search">
-          <label>
-            <input type="text" name="search" placeholder="Поиск">
-          </label>
-        </div>
+        <label class="goods-search">
+          <input class="search-form" type="search" name="search" placeholder="Поиск">
+          <i class="icon-search"></i>
+        </label>
         <ul class="goods-order">
           <li>
             <a class="bookmark" href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
           </li>
           <li>
-            <a class="basket" href="#"><i class="icon-basket"></i>Корзина: 0</a>
+            <a class="basket basket-full" href="#"><i class="icon-basket"></i>Корзина: 10</a>
           </li>
           <li>
             <a class="make-order" href="#">Оформить заказ</a>
@@ -41,25 +41,27 @@
           <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </div>
         <div class="header-contacts">
-          <span class="phone"><i class="icon-phone"></i>+7 (812) 555-05-05</span>
-          <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <span class="phone"><i class="icon-phone"></i>+7 (812) 555-05-55</span>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block">
           <div class="authorized-user">
             <a class="username" href="#"><i class="icon-user"></i>Равшан Джамшутович</a>
             <a class="logout" href="#"><i class="icon-logout"></i></a>
           </div>
-          <div class="user-data">
-            <a class="orders" href="#">Мои заказы</a>
-            <a class="user-page" href="#">Личный кабинет</a>
-          </div>
+          <ul class="user-data">
+            <li>
+              <a class="orders" href="#">Мои заказы</a></li>
+            <li><i></i></li>
+            <li><a class="user-page" href="#">Личный кабинет</a></li>
+          </ul>
         </div>
       </div>
       <nav class="main-navigation container">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -92,13 +94,13 @@
           <div class="price-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar"></div>
+                <div style="width:80%;" class="bar"></div>
               </div>
               <div class="toggle min-toggle"></div>
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              <input class="min-price" type="text" value="0"> -
+              <input class="min-price" type="text" value="0"><i></i>
               <input class="max-price" type="text" value="30000">
             </div>
           </div>
@@ -132,24 +134,24 @@
               </label>
             </fieldset>
           </div>
-          <button type="submit">Показать</button>
+          <button class="supply-btn" type="submit">Показать</button>
         </form>
       </div>
       <div class="catalogue-content-right">
         <div class="sorting range-category clearfix">
           <span class="sorting-title">Сортировка:</span>
           <ul class="sorting-category">
-            <li><a class="active" href="#">По цене</a></li>
+            <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
-            <li><a href="#"><i class="icon-up-dir"></i></a></li>
-            <li><a href="#"><i class="icon-down-dir"></i></a></li>
+            <li><a class="sorting-controls active" href="#"><i class="icon-up-dir"></i></a></li>
+            <li><a class="sorting-controls" href="#"><i class="icon-down-dir"></i></a></li>
           </ul>
         </div>
-        <div class="catalogue-list">
-          <div class="catalogue-container">
-            <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+        <div class="catalogue-range">
+          <div class="catalogue-wrapper">
+            <div class="catalogue-item-image inner-page">
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -165,8 +167,8 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+            <div class="catalogue-item-image inner-page">
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -182,8 +184,8 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new"></div>
+            <div class="catalogue-item-image inner-page no-discount">
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -193,13 +195,13 @@
               </div>
               <p>
                 <a class="item-title" href="#">
-                  <span>Перфоратор</span>
-                  <span>BOSCH BFG 2000</span></a>
+                  <span>Перфоратор BOSCH </span>
+                  <span>BFG 2000</span></a>
               </p>
               <span class="discount">12500 Р.</span>
               <span class="price">12500 P.</span>
             </div>
-            <div class="catalogue-item-image">
+            <div class="catalogue-item-image inner-page">
               <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
@@ -216,8 +218,8 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
-              <div class="flag flag-new"></div>
+            <div class="catalogue-item-image inner-page">
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -233,8 +235,8 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new">new</div>
+            <div class="catalogue-item-image inner-page no-discount">
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -250,8 +252,8 @@
               <span class="discount">12500 Р.</span>
               <span class="price">12500 P.</span>
             </div>
-            <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+            <div class="catalogue-item-image inner-page">
+              <div class="flag flag-new new-item"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -267,8 +269,8 @@
               <span class="discount">22500 P.</span>
               <span class="price">15500 P.</span>
             </div>
-            <div class="catalogue-item-image">
-              <div class="flag flag-new">new</div>
+            <div class="catalogue-item-image inner-page">
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -284,8 +286,8 @@
               <span class="discount">30500 P.</span>
               <span class="price">25500 P.</span>
             </div>
-            <div class="catalogue-item-image no-discount">
-              <div class="flag flag-new">new</div>
+            <div class="catalogue-item-image inner-page no-discount">
+              <div class="flag flag-new"></div>
               <div class="actions">
                 <a class="buy" href="#"><i class="icon-basket"></i>Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
@@ -331,8 +333,8 @@
     <div class="footer-top">
       <div class="container clearfix">
         <div class="footer-contacts">
-          <div class="logo footer"><a href="index.html">Техномарт</a></div>
-          <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <a class="logo footer" href="index.html">Техномарт</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <br> +7 (812) 555-05-05</p>
         </div>
         <div class="footer-navigation">
@@ -340,7 +342,7 @@
             <ul>
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a>Каталог</a></li>
+              <li><a href="catalogue.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -363,9 +365,9 @@
             <br> Все права защищены</p>
         </div>
         <div class="footer-social">
-          <a href="#" class="social-btn social-btn-vk"><i class="icon-vk"></i>Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb"><i class="icon-facebook"></i>Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst"><i class="icon-instagramm"></i>Инстаграмм</a>
+          <a href="#" class="social-btn"><i class="icon-vk"></i><b>Вконтакте</b></a>
+          <a href="#" class="social-btn"><i class="icon-facebook"></i><b>Фейсбук</b></a>
+          <a href="#" class="social-btn"><i class="icon-instagramm"></i><b>Инстаграмм</b></a>
         </div>
         <div class="footer-feedback">
           <p>
@@ -380,9 +382,21 @@
       </div>
     </div>
   </footer>
-
-
-
+  <div class="modal-content-order" hidden>
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="modal-form-wrapper">
+      <i class="icon-add"></i>
+      <h2>Товар добавлен в корзину!</h2>
+    </div>
+    <div class="add-basket-actions">
+      <div class="modal-form-wrapper">
+        <a class="btn modal-make-order" href="#">Оформить заказ</a>
+        <a class="btn purchase" href="#">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" hidden></div>
+<script src="js/short-version-for-catalogue.js"></script>
 </body>
 
 </html>
