@@ -184,47 +184,80 @@ ul {
 }
 
 .logo-wrapper {
-    position: relative
+    float: left
 }
 
 .logo {
+    position: relative;
     display: inline-block;
     width: 220px;
-    box-sizing: border-box;
-    padding: 13px 55px 17px;
+    padding-top: 10px;
+    padding-bottom: 8px;
     background: #ee3643;
-    box-shadow: inset 0 -5px 0 0 rgba(0,0,0,.24);
     color: #fff;
-    font-size: 24px;
-    line-height: 24px;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: bottom
+    vertical-align: middle;
+    cursor: default
+}
+
+.logo[href] {
+    cursor: pointer
 }
 
 .header {
-    position: absolute
+    font-size: 24px;
+    line-height: 24px;
+    cursor: default
+}
+
+.logo::after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 5px;
+    background: #b52933;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -110px
 }
 
 .header:hover {
-    background: #ca2c37
+    background: #ca2c37;
+    font-size: 24px
 }
 
 .header:focus {
-    background: #ba2732
+    background: #ba2732;
+    font-size: 24px
+}
+
+.header:hover::after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 5px;
+    background: #9a212a
+}
+
+.header:focus::after {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 5px;
+    background: #8e1e26
 }
 
 .goods-search {
     float: left;
-    margin-left: 220px;
     position: relative;
     width: 260px
 }
 
 .search-form[type=search] {
     box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     padding-left: 50px;
     width: inherit;
     background: #293449;
@@ -243,7 +276,7 @@ ul {
 .goods-search .icon-search::before {
     content: '🔍';
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 15px;
     color: #6a7180
 }
@@ -276,16 +309,13 @@ ul {
     color: #fff
 }
 
-.icon-bookmark::before {
-    margin-right: 13px
-}
-
-.icon-basket::before {
-    margin-right: 17px
-}
-
 .goods-order .basket-full {
     background: #ee3643
+}
+
+.goods-order i::before {
+    margin-right: 14px;
+    padding-left: 14px
 }
 
 .bookmark:hover,.goods-order .basket-empty:hover {
@@ -312,22 +342,23 @@ ul {
 
 .goods-order li {
     display: inline-block;
-    vertical-align: top;
-    text-align: center;
+    vertical-align: middle;
     font-size: 17px;
-    line-height: 18px
+    line-height: 18px;
+    width: 150px
 }
 
 .goods-order a {
     display: block;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     color: #fff
 }
 
 .goods-order .make-order {
-    background: #63a63e
+    background: #63a63e;
+    padding-bottom: 14px;
+    text-align: center
 }
 
 .goods-order .make-order:hover {
@@ -342,14 +373,17 @@ ul {
 h1 {
     font-family: 'Cuprum',sans-serif,'Arial';
     font-size: 30px;
-    line-height: 30px;
+    line-height: 30px
+}
+
+h1,h2 {
     font-weight: 400
 }
 
 .header-middle {
     background: #f1f5f7;
-    padding-top: 46px;
-    padding-bottom: 60px
+    margin: 0;
+    padding: 45px 0 60px
 }
 
 .shop-presentation {
@@ -374,7 +408,7 @@ h1 {
     display: inline-block;
     border: 3px solid #fff;
     text-align: center;
-    padding: 13px 47px 13px 53px;
+    padding: 13px 47px 13px 45px;
     vertical-align: middle;
     height: 17px;
     color: #e9292a;
@@ -397,7 +431,8 @@ h1 {
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
-    text-align: center
+    text-align: center;
+    margin: 0
 }
 
 .user-block {
@@ -417,24 +452,21 @@ h1 {
 
 .login,.signup {
     display: inline-block;
-    padding-top: 14px;
-    padding-bottom: 14px;
     text-align: center;
     vertical-align: middle
 }
 
 .login {
-    padding-right: 27px;
-    padding-left: 16px;
+    padding: 12px 27px 12px 16px;
     margin-right: 10px
 }
 
 .icon-login::before {
     color: #c5c5c5;
-    font-size: 18px;
-    -webkit-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    transform: translateX(-5px)
+    font-size: 22px;
+    -webkit-transform: translateX(-6px);
+    -ms-transform: translateX(-6px);
+    transform: translateX(-6px)
 }
 
 .icon-login:hover::before,h1 {
@@ -442,8 +474,7 @@ h1 {
 }
 
 .signup {
-    padding-left: 25px;
-    padding-right: 25px
+    padding: 14px 25px
 }
 
 .login:hover,.signup:hover {
@@ -492,8 +523,7 @@ h1 {
 }
 
 .user-data li {
-    margin-top: 15px;
-    margin-right: 30px;
+    margin-top: 5px;
     display: inline-block;
     vertical-align: middle
 }
@@ -504,6 +534,10 @@ h1 {
     color: #32425c;
     background: #f2f6f8;
     text-decoration: underline
+}
+
+.user-page {
+    margin-left: 32px
 }
 
 .user-data a:hover {
@@ -521,7 +555,8 @@ h1 {
     height: 5px;
     border-radius: 50%;
     background: #3f4e66;
-    bottom: 10px
+    bottom: 10px;
+    margin-left: 15px
 }
 
 .authorized-user i::before {
@@ -530,25 +565,27 @@ h1 {
 
 .main-navigation {
     border-bottom: 5px solid #293449;
-    margin-top: 36px;
-    padding: 0
+    padding: 0;
+    margin-top: 20px
 }
 
 .main-navigation ul {
     margin: 0;
-    font-size: 0
+    font-size: 0;
+    padding: 0 0 0 30px
 }
 
 .main-navigation li {
     display: inline-block;
     vertical-align: middle;
     font-size: 17px;
-    line-height: 17px
+    line-height: 17px;
+    margin-right: 20px
 }
 
 .main-navigation a {
     display: block;
-    padding: 21px 30px;
+    padding: 20px 21px;
     color: #fff
 }
 
@@ -567,8 +604,8 @@ h1 {
 
 .btn {
     display: inline-block;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -581,7 +618,7 @@ h1 {
 
 .goods-promo {
     padding-top: 59px;
-    padding-bottom: 53px
+    padding-bottom: 50px
 }
 
 .goods-promo .title {
@@ -727,7 +764,7 @@ article .promo:focus {
 
 .slide-content {
     margin-left: 27px;
-    padding-top: 18px
+    padding-top: 24px
 }
 
 .slide-title {
@@ -801,7 +838,7 @@ article .promo:focus {
 }
 
 .icon-left::before {
-    left: 0;
+    left: 2px;
     content: '\3c'
 }
 
@@ -810,30 +847,27 @@ article .promo:focus {
     right: 0
 }
 
-.popular-goods {
-    margin-bottom: 22px
-}
-
 .popular-heading {
     background: #f7f3ec;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 24px
 }
 
 .popular-category {
     float: left;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     color: #32425c;
     text-transform: uppercase;
-    margin-top: 33px;
-    margin-bottom: 35px;
-    margin-left: 30px
+    margin: 30px 0 0
 }
 
 .popular-link {
     float: right;
-    padding: 14px 55px;
-    margin-right: 24px;
+    min-width: 234px;
+    padding: 10px;
     margin-top: 25px;
     margin-bottom: 25px
 }
@@ -858,8 +892,8 @@ article .promo:focus {
     vertical-align: middle;
     width: 220px;
     height: 100%;
-    margin-right: 17px;
-    margin-bottom: 20px;
+    margin-right: 16px;
+    margin-bottom: 17px;
     font-family: 'PT Sans',sans-serif,'Arial';
     font-weight: 700;
     border: 1px solid #e5e5e5;
@@ -886,13 +920,13 @@ article .promo:focus {
     background-position: -311px -884px
 }
 
-.item-title,.new-item {
+.item-title,.item-title span,.new-item {
     display: block
 }
 
 .catalogue-item-image .image {
     margin-top: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     width: 220px;
     height: 88px;
     text-align: center;
@@ -913,6 +947,7 @@ article .promo:focus {
 
 .discount,.price {
     vertical-align: middle;
+    margin-top: 10px;
     font-size: 17px;
     line-height: 18px
 }
@@ -921,7 +956,6 @@ article .promo:focus {
     text-decoration: line-through;
     text-align: center;
     display: block;
-    margin-top: 18px;
     color: #999
 }
 
@@ -929,8 +963,7 @@ article .promo:focus {
     position: relative;
     display: inline-block;
     padding: 13px 17px 13px 37px;
-    margin-top: 13px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     margin-left: 44px;
     background: #ee3643;
     color: #fff;
@@ -967,8 +1000,8 @@ article .promo:focus {
 .company-card {
     display: inline-block;
     width: 218px;
-    height: 145px;
-    margin-bottom: 21px;
+    height: 144px;
+    margin-bottom: 18px;
     margin-right: 20px;
     text-align: center;
     vertical-align: middle;
@@ -1004,11 +1037,13 @@ article .promo:focus {
 
 .services-promo {
     background: #f2f6f8;
-    padding-bottom: 100px;
-    padding-top: 67px
+    padding-top: 70px;
+    padding-bottom: 100px
 }
 
 .services-title {
+    padding: 0;
+    margin: 0 0 28px;
     font-size: 30px;
     line-height: 24px;
     text-transform: uppercase
@@ -1034,7 +1069,7 @@ article .promo:focus {
 }
 
 .services-promo-sliders {
-    margin-top: 75px
+    margin-top: 62px
 }
 
 .tab-controls {
@@ -1048,8 +1083,8 @@ article .promo:focus {
     width: 218px;
     height: 100%;
     padding-left: 22px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 21px;
     line-height: 30px;
     font-weight: 700;
@@ -1095,7 +1130,8 @@ article .promo:focus {
     font-family: 'PT Sans',sans-serif,'Arial';
     font-weight: 400;
     font-size: 13px;
-    line-height: 24px
+    line-height: 24px;
+    margin-top: 10px
 }
 
 .services-slider-one::after {
@@ -1130,9 +1166,11 @@ article .promo:focus {
 }
 
 .services-slider-title {
+    font-family: 'Cuprum',sans-serif,'Arial';
     font-size: 36px;
     line-height: 24px;
-    color: #293449;
+    color: #32425c;
+    font-weight: 400;
     text-transform: uppercase
 }
 
@@ -1149,7 +1187,7 @@ article .promo:focus {
 }
 
 .sliders-column-content p {
-    margin-top: 40px
+    margin-top: 25px
 }
 
 .services-slider-description b {
@@ -1174,8 +1212,8 @@ article .promo:focus {
 }
 
 .company-details {
-    padding-top: 80px;
-    padding-bottom: 85px
+    padding-top: 85px;
+    padding-bottom: 90px
 }
 
 .promo-content-column {
@@ -1188,7 +1226,7 @@ article .promo:focus {
 }
 
 .address-column h2,.promo-content-column h2 {
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
     font-size: 30px;
     line-height: 24px;
@@ -1199,8 +1237,11 @@ article .promo:focus {
     font-family: 'PT Sans',sans-serif,'Arial';
     font-weight: 400;
     font-size: 13px;
-    line-height: 24px;
-    margin-top: 30px
+    line-height: 24px
+}
+
+.promo-content-column .promo-partners {
+    margin: 24px 0 0
 }
 
 .address-column .address-heading {
@@ -1217,7 +1258,7 @@ article .promo:focus {
 }
 
 .partners li {
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     padding-left: 35px;
     position: relative
 }
@@ -1240,7 +1281,7 @@ article .promo:focus {
 }
 
 .promo-content-column .btn {
-    margin-top: 40px;
+    margin-top: 35px;
     padding-left: 40px;
     padding-right: 40px
 }
@@ -1249,8 +1290,8 @@ article .promo:focus {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    margin-top: 40px;
-    padding: 12px 60px 12px 65px;
+    margin-top: 35px;
+    padding: 10px 60px 10px 65px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1268,7 +1309,7 @@ article .promo:focus {
 }
 
 .address-column p {
-    margin-bottom: 40px
+    margin-bottom: 30px
 }
 
 .breadcrumbs {
@@ -1286,7 +1327,9 @@ article .promo:focus {
 .breadcrumbs a[href]::after {
     position: absolute;
     content: '\3e';
-    margin-left: 20px
+    color: #c1c6ce;
+    font-size: 14px;
+    margin-left: 12px
 }
 
 .breadcrumbs a {
@@ -1294,15 +1337,18 @@ article .promo:focus {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 41px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 38px;
     color: #000
 }
 
-.breadcrumbs a[href]::after,.icon-home {
+.icon-home::before {
     color: #c1c6ce;
-    font-size: 16px
+    font-size: 16px;
+    -webkit-transform: translate(-2px,-2px);
+    -ms-transform: translate(-2px,-2px);
+    transform: translate(-2px,-2px)
 }
 
 .catalogue-title {
@@ -1313,8 +1359,8 @@ article .promo:focus {
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
-    padding-top: 33px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 30px
 }
 
@@ -1340,17 +1386,17 @@ article .promo:focus {
 
 .range-category {
     padding-left: 19px;
-    padding-top: 14px;
+    padding-top: 11px;
     background: #f7f3ec;
     margin-bottom: 13px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400
 }
 
 .price-category {
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     font-size: 17px;
     line-height: 30px;
     font-weight: 700
@@ -1384,7 +1430,7 @@ article .promo:focus {
 .range-controls .toggle {
     position: absolute;
     top: 30px;
-    left: 20px;
+    left: 0;
     width: 4px;
     height: 4px;
     border: 8px solid #edece9;
@@ -1395,7 +1441,7 @@ article .promo:focus {
 }
 
 .range-controls .min-toggle {
-    left: 40px
+    left: 15px
 }
 
 .range-controls .max-toggle {
@@ -1409,7 +1455,7 @@ article .promo:focus {
 
 .price-controls input {
     width: 75px;
-    padding: 14px 10px;
+    padding: 10px;
     border: none;
     background: #f7f3ec;
     font-size: 17px;
@@ -1429,14 +1475,14 @@ article .promo:focus {
     position: absolute;
     content: '';
     left: 105px;
-    top: 20px;
+    top: 15px;
     height: 1px;
     width: 10px;
     background: #444
 }
 
 .producers {
-    margin-top: 25px;
+    margin-top: 24px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5
 }
@@ -1453,8 +1499,8 @@ fieldset {
 }
 
 legend {
-    padding-top: 20px;
-    padding-bottom: 21px;
+    padding-top: 16px;
+    padding-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
     font-weight: 700
@@ -1463,7 +1509,7 @@ legend {
 .catalogue-filter label {
     display: block;
     cursor: pointer;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 220px;
     font-size: 15px;
     line-height: 20px;
@@ -1478,9 +1524,9 @@ input[type=radio]+label::before {
     content: '\25cb';
     font-family: 'symbols-technomart';
     display: inline-block;
+    vertical-align: top;
     font-size: 28px;
     font-weight: 400;
-    vertical-align: top;
     margin-right: 12px;
     color: #c1c1c1
 }
@@ -1501,7 +1547,7 @@ input[type=radio]:checked+label::before {
 input[type=checkbox]+label::before {
     content: '\2610';
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     font-family: 'symbols-technomart';
     font-size: 28px;
     width: 28px;
@@ -1525,7 +1571,8 @@ input[type=checkbox]:disabled+label::before {
 .supply-btn {
     display: inline-block;
     vertical-align: middle;
-    padding: 14px 39px;
+    padding: 10px 39px;
+    margin-top: 60px;
     background: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
@@ -1547,7 +1594,8 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .sorting {
-    padding-bottom: 10px
+    padding-top: 10px;
+    padding-bottom: 7px
 }
 
 .sorting-title {
@@ -1565,7 +1613,7 @@ input[type=checkbox]:disabled+label::before {
 
 .sorting-category li {
     display: inline-block;
-    vertical-align: middle
+    vertical-align: top
 }
 
 .sorting-category a:not(.sorting-controls) {
@@ -1573,7 +1621,7 @@ input[type=checkbox]:disabled+label::before {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
-    vertical-align: middle;
+    vertical-align: top;
     color: #d4d1cb;
     border-bottom: 1px dashed #ee3643
 }
@@ -1591,7 +1639,10 @@ input[type=checkbox]:disabled+label::before {
 .icon-down-dir::before,.icon-up-dir::before {
     color: #d4d1cb;
     font-size: 23px;
-    border-bottom: none
+    border-bottom: none;
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px)
 }
 
 .icon-down-dir:hover::before,.icon-up-dir:hover::before {
@@ -1615,12 +1666,12 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .catalogue-range {
-    margin-top: 20px;
+    margin-top: 18px;
     width: 700px
 }
 
 .no-discount .price {
-    margin-top: 47px
+    margin-top: 36px
 }
 
 .inner-page:nth-child(3n) {
@@ -1629,7 +1680,7 @@ input[type=checkbox]:disabled+label::before {
 
 .actions {
     margin-top: 45px;
-    margin-bottom: 55px;
+    margin-bottom: 51px;
     width: 220px;
     height: 80px
 }
@@ -1675,7 +1726,10 @@ input[type=checkbox]:disabled+label::before {
 .buy .icon-basket::before {
     font-size: 17px;
     line-height: 18px;
-    margin-left: -36px;
+    margin-left: -20px;
+    -webkit-transform: translateX(-14px);
+    -ms-transform: translateX(-14px);
+    transform: translateX(-14px);
     color: #92c178
 }
 
@@ -1700,8 +1754,8 @@ input[type=checkbox]:disabled+label::before {
 .paginator {
     margin-right: 0;
     padding: 0;
-    margin-top: 53px;
-    margin-bottom: 60px
+    margin-top: 33px;
+    margin-bottom: 55px
 }
 
 .paginator li {
@@ -1716,9 +1770,9 @@ input[type=checkbox]:disabled+label::before {
     font-size: 13px;
     line-height: 18px;
     color: #000;
-    margin-right: 10px;
+    margin-right: 5px;
     border: 1px solid #e5e5e5;
-    border-radius: 5px
+    border-radius: 3px
 }
 
 .paginator a:hover {
@@ -1730,11 +1784,12 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .page {
-    padding: 10px 16px
+    padding: 10px 15px
 }
 
 .next {
-    padding: 10px 32px
+    padding: 10px 32px;
+    text-transform: uppercase
 }
 
 .current {
@@ -1745,8 +1800,8 @@ input[type=checkbox]:disabled+label::before {
 
 .goods-description {
     background: #f2f6f8;
-    padding-top: 65px;
-    padding-bottom: 70px
+    padding-top: 45px;
+    padding-bottom: 50px
 }
 
 .catalogue-info {
@@ -1770,7 +1825,7 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .footer-top {
-    padding-bottom: 55px
+    padding-bottom: 35px
 }
 
 .footer-contacts {
@@ -1779,8 +1834,13 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .footer {
-    padding: 22px 42px 26px;
-    text-align: center
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 220px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff
 }
 
 .footer-contacts p,.site-navigation li {
@@ -1799,9 +1859,9 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .site-navigation ul {
-    margin: 0;
     font-size: 0;
-    padding: 42px 0 42px 13px
+    padding-left: 13px;
+    margin: 40px 0 0
 }
 
 .site-navigation li {
@@ -1827,9 +1887,9 @@ input[type=checkbox]:disabled+label::before {
 }
 
 .goods-navigation ul {
-    margin: 0;
     font-size: 0;
     padding-left: 37px;
+    margin: 30px 0 0;
     padding-right: 0
 }
 
@@ -1860,8 +1920,7 @@ input[type=checkbox]:disabled+label::before {
 .footer-bottom {
     font-size: 16px;
     line-height: 18px;
-    padding-top: 40px;
-    padding-bottom: 30px
+    padding-top: 20px
 }
 
 .footer-copyright {
@@ -1875,7 +1934,7 @@ input[type=checkbox]:disabled+label::before {
 
 .footer-social {
     float: left;
-    margin-left: 160px;
+    margin-left: 145px;
     margin-top: 10px
 }
 
@@ -1901,18 +1960,18 @@ input[type=checkbox]:disabled+label::before {
     background: #ee3643
 }
 
-.footer-developers,.footer-feedback {
-    float: right;
-    width: 140px;
-    color: #fff
-}
-
 .footer-feedback {
-    margin-right: 20px
+    float: left;
+    width: 150px;
+    color: #fff;
+    margin-left: 110px;
+    margin-right: 35px
 }
 
 .footer-developers {
-    padding-left: 10px
+    float: right;
+    width: 112px;
+    color: #fff
 }
 
 .footer-developers a:hover,.footer-feedback a:hover {
@@ -2122,3 +2181,5 @@ input[type=checkbox]:disabled+label::before {
     height: 100%;
     background: rgba(0,0,0,.3)
 }
+Show transformations
+Original:   41548 bytes

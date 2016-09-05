@@ -29,16 +29,19 @@
     ]
   });
   var showHidePromo = new ShowHidePromo({
-    elForClick: document.querySelectorAll('.slider-controls i, .icon-left, .icon-right'),
+    elForClick: [
+      document.querySelector('.control-one'),
+      document.querySelector('.control-two')
+      ],
     elForShow: [
       document.querySelector('.slider-one'),
       document.querySelector('.slider-two')
     ],
     classActiveCont: 'active-control',
-    arrForPromo: [
-      document.querySelector('.control-one'),
-      document.querySelector('.control-two')
-    ]
+    arrForArrow: [
+      document.querySelector('.icon-right'),
+      document.querySelector('.icon-left')
+      ]
   });
 }());
 
