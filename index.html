@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/minimized-style.css">
+  <link rel="stylesheet" href="css/min-style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <a class="basket basket-empty" href="#"><i class="icon-basket"></i>Корзина: 0</a>
           </li>
           <li>
-            <a class="make-order" href="#">Оформить заказ</a>
+            <a class="make-order" href="modal-content-order.html">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -291,7 +291,7 @@
           <div class="address-map">
             <a href="#"><img class="open-map" width="300" height="158" src="img/address-map.jpg" alt="Location on a map"></a>
           </div>
-          <a class="btn-contact-us" href="#">Заблудились? Напишите нам!</a>
+          <a class="btn-contact-us" href="modal-content-contact.html">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -352,14 +352,16 @@
   <div class="modal-content-contact" hidden>
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form class="write-us" action="/echo" method="post">
-      <div class="modal-form-wrapper clearfix">
-        <div class="left-form-column">
-          <label for="name"><b>Введите ваше имя</b></label>
-          <input class="name" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-        </div>
-        <div class="right-form-column">
-          <label for="email"><b>Ваш e-mail</b></label>
-          <input class="email" type="email" id="email" name="email" placeholder="Для отправки ответа">
+      <div class="modal-form-wrapper">
+        <div class="modal-form-colums clearfix">
+          <div class="left-form-column">
+            <label for="name"><b>Введите ваше имя</b></label>
+            <input class="name" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="right-form-column">
+            <label for="email"><b>Ваш e-mail</b></label>
+            <input class="email" type="email" id="email" name="email" placeholder="Для отправки ответа">
+          </div>
         </div>
         <label for="text"><b>Текст письма</b></label>
         <textarea id="text" name="text" rows="4" placeholder="В свободной форме"></textarea>
@@ -390,7 +392,7 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   </div>
   <div class="modal-overlay" hidden></div>
-  <script src="js/short-version-for-index_html.js"></script>
+  <script src="js/index-min-js.js"></script>
 </body>
 
 </html>

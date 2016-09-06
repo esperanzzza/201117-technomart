@@ -248,7 +248,7 @@ ul {
   display: inline-block;
   width: 220px;
   padding-top: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   background: #ee3643;
   color: #fff;
   text-transform: uppercase;
@@ -262,6 +262,7 @@ ul {
 .header {
   font-size: 24px;
   line-height: 24px;
+  height: 22px;
   cursor: default;
 }
 .logo::after {
@@ -300,13 +301,15 @@ ul {
   float: left;
   position: relative;
   width: 260px;
+  height: 42px;
 }
 .search-form[type='search'] {
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 13px;
   padding-left: 50px;
   width: inherit;
+  height: inherit;
+  padding-top: 10px;
+  padding-bottom: 15px;
   background: #293449;
   font-family: 'Cuprum', sans-serif, 'Arial';
   color: #fff;
@@ -357,8 +360,13 @@ ul {
 .goods-order .basket-full {
   background: #ee3643;
 }
-.goods-order i::before {
+.icon-bookmark::before {
   margin-right: 14px;
+  padding-left: 11px;
+}
+.goods-order .icon-basket::before {
+  margin-right: 17px;
+  padding-left: 11px;
 }
 .bookmark:hover {
   background: #212a3a;
@@ -388,20 +396,19 @@ ul {
   font-size: 17px;
   line-height: 18px;
   width: 150px;
+  height: 22px;
 }
 .goods-order a {
   display: block;
+  width: inherit;
+  height: inherit;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   color: #fff;
-}
-.goods-order i::before {
-  padding-left: 14px;
 }
 .goods-order .make-order {
   background: #63a63e;
   text-align: center;
-  padding-top: 11px;
 }
 .goods-order .make-order:hover {
   background: #5fbb2d;
@@ -1297,7 +1304,7 @@ article .promo:focus {
   -ms-transform: translate(-2px, -2px);
   transform: translate(-2px, -2px);
 }
-.catalogue-title {
+.catalogue-title, .modal-title {
   background: #f7f3ec;
   margin: 0;
   margin-bottom: 20px;
@@ -1878,7 +1885,8 @@ input[type='checkbox']:disabled+label::before {
   padding-right: 80px;
 }
 .name[type='text'], .email[type='email'] {
-  width: 186px;
+  box-sizing: border-box;
+  width: 222px;
   padding: 10px 15px;
   border: 0;
   outline: 0;
@@ -1900,7 +1908,8 @@ input[type='checkbox']:disabled+label::before {
   display: block;
 }
 .write-us textarea {
-  width: 426px;
+  box-sizing: border-box;
+  width: 460px;
   border: 0;
   outline: 0;
   padding: 10px 15px;
@@ -1910,7 +1919,7 @@ input[type='checkbox']:disabled+label::before {
   font-size: 13px;
   line-height: 18px;
   color: #999999;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .left-form-column {
   float: left;
@@ -1953,6 +1962,15 @@ input[type='checkbox']:disabled+label::before {
   z-index: 200;
   margin-top: -250px;
   margin-left: -310px;
+}
+.inner-content-page {
+  position: static;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.modal-title {
+  margin-top: 30px;
 }
 .modal-content-order .icon-add {
   width: 65px;
