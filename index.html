@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/min-style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,16 +18,17 @@
         <div class="logo-wrapper">
           <a class="logo header">Техномарт</a>
         </div>
-        <label class="goods-search">
-          <input class="search-form" type="search" name="search" placeholder="Поиск">
+        <div class="goods-search">
+          <input class="search-form" type="search" id="search" name="search" placeholder="Поиск">
           <i class="icon-search"></i>
-        </label>
+          <label for="search"></label>
+        </div>
         <ul class="goods-order">
           <li>
             <a class="bookmark" href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
           </li>
           <li>
-            <a class="basket basket-empty" href="#"><i class="icon-basket"></i>Корзина: 0</a>
+            <a class="basket-empty" href="#"><i class="icon-basket"></i>Корзина: 0</a>
           </li>
           <li>
             <a class="make-order" href="modal-content-order.html">Оформить заказ</a>
@@ -133,7 +134,7 @@
               <a class="bookmark" href="#">В закладки</a>
             </div>
             <div class="image">
-              <img width="184" height="81" src="img/BFG-9000-trim.jpg" alt="BOSCH BFG 9000">
+              <img width="184" height="81" src="img/bfg-9000-trim.jpg" alt="BOSCH BFG 9000">
             </div>
             <p>
               <a class="item-title" href="#">
@@ -150,7 +151,7 @@
               <a class="bookmark" href="#">В закладки</a>
             </div>
             <div class="image">
-              <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+              <img width="127" height="89" src="img/bfg-3000-trim.jpg" alt="BOSCH BFG 3000">
             </div>
             <p>
               <a class="item-title" href="#">
@@ -167,7 +168,7 @@
               <a class="bookmark" href="#">В закладки</a>
             </div>
             <div class="image">
-              <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+              <img width="144" height="83" src="img/bfg-6000-trim.jpg" alt="BOSCH BFG 6000">
             </div>
             <p>
               <a class="item-title" href="#">
@@ -184,7 +185,7 @@
               <a class="bookmark" href="#">В закладки</a>
             </div>
             <div class="image">
-              <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+              <img width="127" height="89" src="img/bfg-2000-trim.jpg" alt="BOSCH BFG 2000">
             </div>
             <p>
               <a class="item-title" href="#">
@@ -209,7 +210,7 @@
             <a href="#"><img width="123" height="40" src="img/makita-logo.jpg" alt="Makita"></a>
           </li>
           <li class="company-card">
-            <a href="#"><img width="146" height="44" src="img/DeWALT-logo.jpg" alt="DeWalt"></a>
+            <a href="#"><img width="146" height="44" src="img/dewalt-logo.jpg" alt="DeWalt"></a>
           </li>
           <li class="company-card">
             <a href="#"><img width="184" height="32" src="img/interscol-logo.jpg" alt="Интерскол"></a>
@@ -221,7 +222,7 @@
             <a href="#"><img width="121" height="73" src="img/lg-logo.jpg" alt="LG"></a>
           </li>
           <li class="company-card">
-            <a href="#"><img width="151" height="96" src="img/AEG-logo.jpg" alt="AEG Power Solutions"></a>
+            <a href="#"><img width="151" height="96" src="img/aeg-logo.jpg" alt="AEG Power Solutions"></a>
           </li>
           <li class="company-card">
             <a href="#"><img width="204" height="69" src="img/metabo-logo.jpg" alt="METABO"></a>
@@ -237,7 +238,7 @@
           <div class="services-promo-wrapper clearfix">
             <div class="left-tabs-column">
               <ul class="tab-controls">
-                <li><a class="tab-control-one" href="#">Доставка</a></li>
+                <li class="active-tab"><a class="tab-control-one" href="#">Доставка</a></li>
                 <li><a class="tab-control-two" href="#">Гарантия</a></li>
                 <li><a class="tab-control-three" href="#">Кредит</a></li>
               </ul>
@@ -274,8 +275,8 @@
         <div class="promo-content-column">
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p class="promo-partners">Мы можем доставить ваш товар в самые отдаленные точки России!
-            <br> Техномарт работает со многими транспортными компаниями:</p>
+          <p class="promo-partners">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+          <p> Техномарт работает со многими транспортными компаниями:</p>
           <ul class="partners">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -302,7 +303,7 @@
         <div class="footer-contacts">
           <a class="logo footer">Техномарт</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <br> +7 (812) 555-05-05</p>
+            <br> +7 (812) 555-05-55</p>
         </div>
         <div class="footer-navigation">
           <nav class="site-navigation">
@@ -327,10 +328,9 @@
     </div>
     <div class="footer-bottom">
       <div class="container clearfix">
-        <div class="footer-copyright">
-          <p>© 2010-2016 Компания "Техномарт"
-            <br> Все права защищены</p>
-        </div>
+        <p class="footer-copyright">© 2010-2016 Компания «Техномарт»
+            <b> Все права защищены</b>
+          </p>
         <div class="footer-social">
           <a href="#" class="social-btn"><i class="icon-vk"></i><b>Вконтакте</b></a>
           <a href="#" class="social-btn"><i class="icon-facebook"></i><b>Фейсбук</b></a>

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/min-style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,16 +18,17 @@
         <div class="logo-wrapper">
           <a class="logo header" href="index.html">Техномарт</a>
         </div>
-        <label class="goods-search">
-          <input class="search-form" type="search" name="search" placeholder="Поиск">
+        <div class="goods-search">
+          <input class="search-form" type="search" id="search" name="search" placeholder="Поиск">
           <i class="icon-search"></i>
-        </label>
+          <label for="search"></label>
+        </div>
         <ul class="goods-order">
           <li>
             <a class="bookmark" href="#"><i class="icon-bookmark"></i>Закладки: 0</a>
           </li>
           <li>
-            <a class="basket basket-full" href="#"><i class="icon-basket"></i>Корзина: 10</a>
+            <a class="basket-full" href="#"><i class="icon-basket"></i>Корзина: 10</a>
           </li>
           <li>
             <a class="make-order" href="modal-content-order.html">Оформить заказ</a>
@@ -141,7 +142,7 @@
         <div class="sorting range-category clearfix">
           <span class="sorting-title">Сортировка:</span>
           <ul class="sorting-category">
-            <li><a href="#">По цене</a></li>
+            <li class="sorting-active"><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
             <li><a class="sorting-controls active" href="#"><i class="icon-up-dir"></i></a></li>
@@ -157,7 +158,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+                <img width="127" height="89" src="img/bfg-3000-trim.jpg" alt="BOSCH BFG 3000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -174,7 +175,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+                <img width="144" height="83" src="img/bfg-6000-trim.jpg" alt="BOSCH BFG 6000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -191,7 +192,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+                <img width="127" height="89" src="img/bfg-2000-trim.jpg" alt="BOSCH BFG 2000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -208,7 +209,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+                <img width="127" height="89" src="img/bfg-3000-trim.jpg" alt="BOSCH BFG 3000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -225,7 +226,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+                <img width="144" height="83" src="img/bfg-6000-trim.jpg" alt="BOSCH BFG 6000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -242,7 +243,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+                <img width="127" height="89" src="img/bfg-2000-trim.jpg" alt="BOSCH BFG 2000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -259,7 +260,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-3000-trim.jpg" alt="BOSCH BFG 3000">
+                <img width="127" height="89" src="img/bfg-3000-trim.jpg" alt="BOSCH BFG 3000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -276,7 +277,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="144" height="83" src="img/BFG-6000-trim.jpg" alt="BOSCH BFG 6000">
+                <img width="144" height="83" src="img/bfg-6000-trim.jpg" alt="BOSCH BFG 6000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -293,7 +294,7 @@
                 <a class="bookmark" href="#">В закладки</a>
               </div>
               <div class="image">
-                <img width="127" height="89" src="img/BFG-2000-trim.jpg" alt="BOSCH BFG 2000">
+                <img width="127" height="89" src="img/bfg-2000-trim.jpg" alt="BOSCH BFG 2000">
               </div>
               <p>
                 <a class="item-title" href="#">
@@ -325,17 +326,17 @@
   <div class="goods-description">
     <div class="container">
       <h2 class="catalogue-info">Пара слов о перфораторах</h2>
-      <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
-        и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <p>Перфоратор – универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
+        и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </div>
   </div>
   <footer class="main-footer catalogue-footer">
     <div class="footer-top">
       <div class="container clearfix">
         <div class="footer-contacts">
-          <a class="logo footer" href="index.html">Техномарт</a>
+            <a class="logo footer" href="index.html">Техномарт</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <br> +7 (812) 555-05-05</p>
+            <br> +7 (812) 555-05-55</p>
         </div>
         <div class="footer-navigation">
           <nav class="site-navigation">
@@ -360,10 +361,9 @@
     </div>
     <div class="footer-bottom">
       <div class="container clearfix">
-        <div class="footer-copyright">
-          <p>© 2010-2016 Компания "Техномарт"
-            <br> Все права защищены</p>
-        </div>
+        <p class="footer-copyright">© 2010-2016 Компания "Техномарт"
+            <b> Все права защищены</b>
+          </p>
         <div class="footer-social">
           <a href="#" class="social-btn"><i class="icon-vk"></i><b>Вконтакте</b></a>
           <a href="#" class="social-btn"><i class="icon-facebook"></i><b>Фейсбук</b></a>
