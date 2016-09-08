@@ -1130,7 +1130,7 @@ article .promo:focus {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  background: #293449;
+  background: #32425c;
   color: #fff;
   outline: none;
   border: none;
@@ -1138,20 +1138,21 @@ article .promo:focus {
   border-top: 1px solid #405069;
 }
 .active-tab a {
-  color: #293449;
   background: #fff;
+  color: #32425c;
   border: transparent;
 }
 .tab-controls a:hover {
-  background: #fff;
-  color: #293449;
+  background: #293449;
+  color: #fff;
   cursor: pointer;
-  border: transparent;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
 }
 .tab-controls a:focus {
   background: #fff;
-  border: transparent;
   color: #32425c;
+  border: transparent;
   cursor: pointer;
 }
 .tab-controls::after {
