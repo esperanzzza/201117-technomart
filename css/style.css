@@ -388,7 +388,7 @@ input[type='search']:-ms-input-placeholder {
   background: #212a3a;
   opacity: 1;
 }
- .basket-empty:hover i::before {
+.basket-empty:hover i::before {
   background: #212a3a;
   opacity: 1;
 }
@@ -397,8 +397,8 @@ input[type='search']:-ms-input-placeholder {
   opacity: 1;
 }
 .basket-full:hover i::before {
- background: #ca2c37;
- opacity: 1;
+  background: #ca2c37;
+  opacity: 1;
 }
 .goods-order .bookmark:focus {
   background: #161d29;
@@ -417,8 +417,8 @@ input[type='search']:-ms-input-placeholder {
   opacity: 0.6;
 }
 .basket-full:focus i::before {
- background: #ba2732;
- opacity: 0.5;
+  background: #ba2732;
+  opacity: 0.5;
 }
 .basket-empty:focus i::before {
   background: #161d29;
@@ -609,11 +609,10 @@ h2 {
   color: #c5c5c5;
   opacity: 1;
 }
-  .logout:focus i::before {
-    color: #c5c5c5;
-    opacity: 1;
-  }
-
+.logout:focus i::before {
+  color: #c5c5c5;
+  opacity: 1;
+}
 .user-data {
   position: relative;
   padding-left: 20px;
@@ -866,10 +865,10 @@ article .promo:focus {
   -ms-transform: translate(-165px, 150px);
   transform: translate(-165px, 150px);
 }
-.slider-two .btn:hover {
+.slide-content .btn:hover {
   background: #ca2c37;
 }
-.slider .btn:focus {
+.slide-content .btn:focus {
   background: #ba2732;
 }
 .slider-controls {
@@ -953,7 +952,7 @@ article .promo:focus {
   vertical-align: middle;
   width: 220px;
   height: 100%;
-  margin-right: 16px;
+  margin-right: 17px;
   margin-bottom: 20px;
   font-family: 'PT Sans', sans-serif, 'Arial';
   font-weight: 700;
@@ -961,7 +960,7 @@ article .promo:focus {
   transition: 0.3s ease-in-out;
 }
 .main-page:nth-child(4n) {
-  margin-right: 0;
+  margin-right: -5px;
 }
 .flag {
   position: absolute;
@@ -1145,7 +1144,7 @@ article .promo:focus {
 }
 .tab-controls a:hover {
   background: #fff;
-  color:#293449;
+  color: #293449;
   cursor: pointer;
   border: transparent;
 }
@@ -1198,7 +1197,7 @@ article .promo:focus {
   width: 368px;
   height: 283px;
   left: 255px;
-  top:  0;
+  top: 0;
   z-index: 10;
 }
 .services-slider-three::after {
@@ -1207,7 +1206,7 @@ article .promo:focus {
   background-image: url('../img/sprite.png');
   background-position: -20px -281px;
   width: 443px;
-  height: 280px;
+  height: 272px;
   left: 204px;
   top: 6px;
   z-index: 10;
@@ -1279,7 +1278,7 @@ article .promo:focus {
   margin: 0;
   margin-top: 24px;
 }
-.promo-partners + p {
+.promo-partners+p {
   margin: 0;
 }
 .address-column .address-heading {
@@ -1626,7 +1625,7 @@ input[type='checkbox']:checked:disabled+label::before {
   line-height: 18px;
   font-weight: 400;
   vertical-align: top;
-  color:  rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed #ee3643;
 }
 .sorting-category .sorting-active a {
@@ -1672,10 +1671,10 @@ input[type='checkbox']:checked:disabled+label::before {
   display: none;
 }
 .no-discount .price {
-  margin-top: 36px;
+  margin-top: 38px;
 }
 .inner-page:nth-child(3n) {
-  margin-right: 0;
+  margin-right: -5px;
 }
 .actions {
   margin-top: 45px;
@@ -1834,8 +1833,8 @@ input[type='checkbox']:checked:disabled+label::before {
 .site-navigation ul {
   margin: 0;
   font-size: 0;
-  padding-left: 13px;
   margin-top: 38px;
+  padding-left: 17px;
 }
 .site-navigation li {
   display: inline-block;
@@ -1846,7 +1845,7 @@ input[type='checkbox']:checked:disabled+label::before {
   color: #f1f5f7;
 }
 .site-navigation li:last-child {
-  margin-right: -1px;
+  margin-right: -5px;
 }
 .site-navigation a {
   color: #f1f5f7;
@@ -1860,9 +1859,9 @@ input[type='checkbox']:checked:disabled+label::before {
 .goods-navigation ul {
   margin: 0;
   font-size: 0;
-  padding-left: 37px;
+  padding-left: 39px;
   margin-top: 32px;
-  padding-right: 2px;
+  padding-right: 5px;
 }
 .goods-navigation li {
   display: inline-block;
@@ -1872,7 +1871,7 @@ input[type='checkbox']:checked:disabled+label::before {
   margin-right: 59px;
 }
 .goods-navigation li:last-child {
-  margin-right: 0;
+  margin-right: -5px;
 }
 .goods-navigation a {
   color: #ffd180;
@@ -1903,7 +1902,7 @@ input[type='checkbox']:checked:disabled+label::before {
   margin-top: 16px;
 }
 .social-btn {
-  margin-right: 5px;
+  margin-right: 3px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1928,7 +1927,7 @@ input[type='checkbox']:checked:disabled+label::before {
   float: left;
   width: 150px;
   color: #fff;
-  margin-left: 110px;
+  margin-left: 113px;
   margin-right: 37px;
 }
 .footer-developers {
