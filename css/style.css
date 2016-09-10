@@ -992,6 +992,7 @@ article .promo:focus {
   text-align: center;
   vertical-align: middle;
   margin-left: -10px;
+  display: block;
 }
 .catalog-item-image img {
   max-width: 100%;
@@ -1696,7 +1697,7 @@ input[type='checkbox']:checked:disabled+label::before {
 }
 .actions {
   margin-top: 43px;
-  margin-bottom: 52px;
+  margin-bottom: 56px;
   width: 220px;
   height: 80px;
   display: none;
@@ -1792,7 +1793,7 @@ input[type='checkbox']:checked:disabled+label::before {
   padding: 10px 15px;
 }
 .next {
-  padding: 10px 32px;
+  padding: 10px 30px;
   text-transform: uppercase;
 }
 .paginator .current {
